@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>把玩书架</title>
+    <meta name="description" content="私人图书馆：书架与简介。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="room">
+      <header class="mast">
+        <p class="eyebrow" id="hero-sub"></p>
+        <h1 id="hero-title">把玩书架</h1>
+        <p class="lead" id="hero-lead"></p>
+        <div class="stat-row" id="stats"></div>
+        <div class="tags" id="tags"></div>
+      </header>
+
+      <div class="toolbar">
+        <div class="filters" id="filters" aria-label="分类"></div>
+        <p class="hint">点击书，阅读简介</p>
+      </div>
+
+      <section class="library" id="library" aria-label="书架"></section>
+
+      <footer class="footer">
+        <p>私人图书馆 · 封面来自 Open Library 与自制题名图</p>
+      </footer>
+    </div>
+
+    <div class="drawer-backdrop" id="backdrop"></div>
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <button class="close-btn" id="close-drawer" type="button" aria-label="关闭">×</button>
+      <div id="drawer-body"></div>
+    </aside>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
